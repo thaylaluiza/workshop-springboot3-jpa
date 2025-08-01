@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -18,6 +20,8 @@ import java.util.Objects;
         private String phone;
         private String password;
 
+        @OneToMany(mappedBy = "client")
+        private List<Order> orders = new ArrayList<>();
 
 
         public User(Long id, String email, String nome, String phone, String password) {
@@ -26,7 +30,10 @@ import java.util.Objects;
             this.nome = nome;
             this.phone = phone;
             this.password = password;
+
+
         }
+
 
          public User() {
 
@@ -74,6 +81,10 @@ import java.util.Objects;
             this.password = password;
         }
 
+        public List<Order> getOrders() {
+        return orders;
+         }
+
         @Override
         public boolean equals(Object o) {
             if (o == null || getClass() != o.getClass()) return false;
@@ -85,6 +96,9 @@ import java.util.Objects;
         public int hashCode() {
             return Objects.hashCode(id);
         }
-    }
+
+
+
+}
 
 
