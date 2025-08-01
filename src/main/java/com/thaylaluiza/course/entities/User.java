@@ -18,9 +18,7 @@ import java.util.Objects;
         private String phone;
         private String password;
 
-        public User() {
 
-        }
 
         public User(Long id, String email, String nome, String phone, String password) {
             this.id = id;
@@ -30,8 +28,13 @@ import java.util.Objects;
             this.password = password;
         }
 
+         public User() {
 
-        public Long getId() {
+        }
+
+
+
+    public Long getId() {
             return id;
         }
 
