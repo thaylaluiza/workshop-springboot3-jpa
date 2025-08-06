@@ -1,5 +1,7 @@
 package com.thaylaluiza.course.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -18,7 +20,8 @@ public class Category implements Serializable {
     private Long id;
     private String nome;
 
-
+    @JsonBackReference
+    @ManyToMany(mappedBy = "categories")
     private Set<Product> products = new HashSet<>();
 
     public Category(){
