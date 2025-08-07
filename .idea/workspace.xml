@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/entities/Payment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/config/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/config/TestConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/entities/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/entities/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/entities/OrderItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/entities/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
