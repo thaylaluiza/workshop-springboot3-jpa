@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5492a1f6-94f0-4ec4-8e15-a9bd0454f97a" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/entities/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/resources/exceptions/ResourceExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/resources/exceptions/StandardError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/services/exceptions/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/config/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/config/TestConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/entities/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/entities/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thaylaluiza/course/entities/OrderItem.java" afterDir="false" />
