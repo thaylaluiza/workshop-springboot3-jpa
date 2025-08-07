@@ -1,5 +1,8 @@
 package com.thaylaluiza.course.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.thaylaluiza.course.entities.pk.OrderItemPK;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.EmbeddedId;
@@ -11,8 +14,11 @@ import java.util.Objects;
 @Entity
 @Table(name = "tb_order_item")
 public class OrderItem implements Serializable {
+
+
     @EmbeddedId
-    private OrderItemPK id ;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    private OrderItemPK id = new OrderItemPK();
 
 
     private Integer quantity;
@@ -29,6 +35,7 @@ public class OrderItem implements Serializable {
         this.price = price;
     }
 
+    @JsonIgnore
     public Order getOrder() {
         return id.getOrder();
     }
@@ -42,8 +49,8 @@ public class OrderItem implements Serializable {
     }
 
 
-    public Order getProduct() {
-        return id.getOrder();
+    public Product getProduct() {
+        return id.getProduct();
     }
 
 
